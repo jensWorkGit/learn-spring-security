@@ -20,3 +20,5 @@ hs_err_pid*
 /.idea/
 m1-lesson7/learn-spring-security-m1-l7.iml
 /eclipse/
+/m1-lesson3/target/
+/m1-lesson4/target/
