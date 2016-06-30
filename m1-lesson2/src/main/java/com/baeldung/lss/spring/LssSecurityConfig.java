@@ -8,6 +8,16 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableWebSecurity
 public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
 
+    public LssSecurityConfig() {
+        super();
+    }
 
+    @Autowired
+    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception { // @formatter:off
+        auth.
+            inMemoryAuthentication().
+            withUser("user").password("pass").
+            roles("USER");
+    } // @formatter:on
 
 }

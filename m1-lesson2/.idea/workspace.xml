@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ca1ba94-c902-4739-9060-d15eaf151afe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssSecurityConfig.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m1-lesson3/.gitignore" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m1-lesson3/.idea/compiler.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m1-lesson3/.idea/copyright/profiles_settings.xml" />
@@ -10,7 +9,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m1-lesson3/.idea/misc.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m1-lesson3/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssApp2.java" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssApp2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssSecurityConfig.java" />
     </list>
     <ignored path="learn-spring-security-m1-l2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,14 +63,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LssSecurityConfig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LssSecurityConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#543#544#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LssApp2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssApp2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -183,6 +195,7 @@
         <option value="$PROJECT_DIR$/commands.md" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssApp2.java" />
       </list>
     </option>
   </component>
@@ -408,6 +421,7 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="js-jscs-package" value="C:\Program Files\nodejs\node_modules\jscs" />
     <property name="GO_FMT" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -890,7 +904,7 @@
       <option name="presentableId" value="Default" />
       <updated>1467274815726</updated>
       <workItem from="1467274817103" duration="13000" />
-      <workItem from="1467274837019" duration="658000" />
+      <workItem from="1467274837019" duration="1144000" />
     </task>
     <task id="LOCAL-00001" summary="* added password file">
       <created>1467275038345</created>
@@ -906,11 +920,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467275153218</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="* added security config">
+      <created>1467275513012</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1467275513012</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="671000" />
+    <option name="totallyTimeSpent" value="1157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="0" />
@@ -954,7 +975,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="* added password file" />
-    <option name="LAST_COMMIT_MESSAGE" value="* added password file" />
+    <MESSAGE value="* added security config" />
+    <option name="LAST_COMMIT_MESSAGE" value="* added security config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1006,11 +1028,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssApp2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
