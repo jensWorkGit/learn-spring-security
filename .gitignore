@@ -10,3 +10,11 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/m1-lesson1/learn-spring-security-m1-l1.iml
+/m1-lesson2/learn-spring-security-m1-l2.iml
+/m1-lesson3/learn-spring-security-m1-l3.iml
+/m1-lesson4/learn-spring-security-m1-l4.iml
+/m1-lesson5/learn-spring-security-m1-l5.iml
+/learn-spring-security-m1.iml
+/m1-lesson6/learn-spring-security-m1-l6.iml
+/.idea/
