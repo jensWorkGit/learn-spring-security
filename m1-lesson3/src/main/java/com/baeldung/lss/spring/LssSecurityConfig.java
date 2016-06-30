@@ -9,12 +9,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableWebSecurity
 public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    public LssSecurityConfig() {
-        super();
-    }
-
-    //
-
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception { // @formatter:off 
         auth.
@@ -28,7 +22,7 @@ public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
          http
             .authorizeRequests()
              .anyRequest().authenticated()
-             .antMatchers("/delete/**").hasAnyAuthority("ADMIN", "ADMIN2") // ROLE_ADMIN
+             .antMatchers("delete/**").hasAnyAuthority("ADMIN", "ADMIN2") // ROLE_ADMIN
              .and()
         .formLogin().and()
         .httpBasic();
