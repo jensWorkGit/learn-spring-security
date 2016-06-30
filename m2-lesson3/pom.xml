@@ -94,6 +94,20 @@ Module  2 - Lesson 3</description>
             <version>${commons-lang3.version}</version>
         </dependency>
 
+        <!-- mail -->
+
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>javax.mail-api</artifactId>
+            <version>${javax.mail-api.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>${javax.mail.version}</version>
+        </dependency>
+
         <!-- logging -->
 
         <dependency>
@@ -199,6 +213,10 @@ Module  2 - Lesson 3</description>
 
         <!-- marshalling -->
         <jaxb-api.version>2.2.12</jaxb-api.version>
+
+        <!-- mail -->
+        <javax.mail-api.version>1.5.5</javax.mail-api.version>
+        <javax.mail.version>1.5.5</javax.mail.version>
 
         <!-- commons and utils -->
         <commons-lang3.version>3.4</commons-lang3.version>
