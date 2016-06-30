@@ -1,0 +1,6 @@
+com\baeldung\lss\persistence\UserRepository.class
+com\baeldung\lss\spring\LssApp2.class
+com\baeldung\lss\persistence\InMemoryUserRepository.class
+com\baeldung\lss\web\model\User.class
+com\baeldung\lss\web\controller\UserController.class
+com\baeldung\lss\spring\LssApp2$1.class
