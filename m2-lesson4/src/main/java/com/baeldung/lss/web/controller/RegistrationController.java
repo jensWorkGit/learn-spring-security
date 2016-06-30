@@ -1,18 +1,24 @@
 package com.baeldung.lss.web.controller;
 
 import java.util.Calendar;
+import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
+import com.baeldung.lss.model.PasswordResetToken;
+import com.baeldung.lss.persistence.PasswordResetTokenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.mail.SimpleMailMessage;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -30,6 +36,10 @@ class RegistrationController {
 
     @Autowired
     private IUserService userService;
+
+    @Autowired
+    private PasswordResetTokenRepository passwordResetTokenRepository;
+
 
     @RequestMapping(value = "signup")
     public ModelAndView registrationForm() {
@@ -71,6 +81,24 @@ class RegistrationController {
         user.setEnabled(true);
         userService.saveRegisteredUser(user);
         redirectAttributes.addFlashAttribute("message", "Your account verified successfully");
+        return new ModelAndView("redirect:/login");
+    }
+
+
+    // password reset
+
+    @RequestMapping(value = "/user/resetPassword", method = RequestMethod.POST)
+    @ResponseBody
+    public ModelAndView resetPassword(final HttpServletRequest request, @RequestParam("email") final String userEmail, final RedirectAttributes redirectAttributes) {
+        final User user = userService.findUserByEmail(userEmail);
+        if (user != null) {
+            final String token = UUID.randomUUID().toString();
+            final PasswordResetToken myToken = new PasswordResetToken(token, user);
+            passwordResetTokenRepository.save(myToken);
+
+        }
+
+        redirectAttributes.addFlashAttribute("message", "You should receive an Password Reset Email shortly");
         return new ModelAndView("redirect:/login");
     }
 
