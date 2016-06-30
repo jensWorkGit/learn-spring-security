@@ -7,13 +7,17 @@ import com.baeldung.lss.service.IUserService;
 import com.baeldung.lss.validation.EmailExistsException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import java.util.Calendar;
 import java.util.UUID;
 
 @Controller
@@ -50,13 +54,23 @@ class RegistrationController {
             final String appUrl = "http://" + request.getServerName() + ":" + request.getServerPort() +
                                   request.getContextPath();
 
-
-
+            //sendVerificationEmail(user, token, appUrl);
 
         } catch (EmailExistsException e) {
             result.addError(new FieldError("user", "email", e.getMessage()));
             return new ModelAndView("registrationPage", "user", user);
         }
+        return new ModelAndView("redirect:/login");
+    }
+
+    @RequestMapping(value = "/registrationConfirm")
+    public ModelAndView confirmRegistration(final Model model, @RequestParam("token") final String token, final RedirectAttributes redirectAttributes) {
+        final VerificationToken verificationToken = verificationTokenRepository.findByToken(token);
+        final User user = verificationToken.getUser();
+
+        user.setEnabled(true);
+        userService.save(user);
+        redirectAttributes.addFlashAttribute("message", "Your account verified successfully");
         return new ModelAndView("redirect:/login");
     }
 
