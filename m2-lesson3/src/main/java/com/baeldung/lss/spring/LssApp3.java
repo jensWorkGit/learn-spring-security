@@ -1,7 +1,7 @@
 package com.baeldung.lss.spring;
 
 import com.baeldung.lss.persistence.UserRepository;
-import com.baeldung.lss.web.model.User;
+import com.baeldung.lss.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,7 +14,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @ComponentScan("com.baeldung.lss")
 @EnableJpaRepositories("com.baeldung.lss")
-@EntityScan("com.baeldung.lss.web.model")
+@EntityScan("com.baeldung.lss.model")
 public class LssApp3 {
 
     @Autowired

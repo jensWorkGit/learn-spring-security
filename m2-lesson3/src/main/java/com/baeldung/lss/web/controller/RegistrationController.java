@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.baeldung.lss.service.IUserService;
 import com.baeldung.lss.validation.EmailExistsException;
-import com.baeldung.lss.web.model.User;
+import com.baeldung.lss.model.User;
 
 @Controller
 class RegistrationController {
@@ -32,6 +32,7 @@ class RegistrationController {
             return new ModelAndView("registrationPage", "user", user);
         }
         try {
+            user.setEnabled(false);
             userService.registerNewUser(user);
         } catch (EmailExistsException e) {
             result.addError(new FieldError("user", "email", e.getMessage()));
