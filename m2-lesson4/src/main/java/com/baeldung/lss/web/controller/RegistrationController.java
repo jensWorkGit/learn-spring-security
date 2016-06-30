@@ -96,6 +96,7 @@ class RegistrationController {
             final PasswordResetToken myToken = new PasswordResetToken(token, user);
             passwordResetTokenRepository.save(myToken);
 
+            // sendResetEmail(token, user);
         }
 
         redirectAttributes.addFlashAttribute("message", "You should receive an Password Reset Email shortly");

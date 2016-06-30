@@ -6,9 +6,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m2-lesson3/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m2-lesson3/.idea/libraries/Maven__javax_mail_javax_mail_api_1_5_5.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m2-lesson3/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/model/PasswordResetToken.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/persistence/PasswordResetTokenRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/forgotPassword.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m2-lesson5/.idea/artifacts/learn_spring_security_m2_l5_war.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m2-lesson5/.idea/artifacts/learn_spring_security_m2_l5_war_exploded.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m2-lesson5/.idea/compiler.xml" />
@@ -109,10 +106,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../m2-lesson3/learn-spring-security-m2-l3.iml" afterPath="$PROJECT_DIR$/../m2-lesson3/learn-spring-security-m2-l3.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../m2-lesson3/pom.xml" afterPath="$PROJECT_DIR$/../m2-lesson3/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../m2-lesson3/src/main/java/com/baeldung/lss/registration/listener/RegistrationListener.java" afterPath="$PROJECT_DIR$/../m2-lesson3/src/main/java/com/baeldung/lss/registration/listener/RegistrationListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/web/controller/RegistrationController.java" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/web/controller/RegistrationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/loginPage.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/loginPage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../m2-lesson5/src/main/resources/templates/loginPage.html" afterPath="$PROJECT_DIR$/../m2-lesson5/src/main/resources/templates/loginPage.html" />
     </list>
     <ignored path="learn-spring-security-m2-l4.iws" />
@@ -139,8 +134,8 @@
       <file leaf-file-name="RegistrationController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/lss/web/controller/RegistrationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="96" column="55" selection-start-line="96" selection-start-column="55" selection-end-line="96" selection-end-column="55" />
+            <state relative-caret-position="582">
+              <caret line="98" column="43" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -531,6 +526,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="js-jscs-package" value="C:\Program Files\nodejs\node_modules\jscs" />
+    <property name="GO_FMT" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1017,12 +1013,20 @@
       <option name="presentableId" value="Default" />
       <updated>1467295523392</updated>
       <workItem from="1467295524622" duration="40000" />
-      <workItem from="1467295569071" duration="2734000" />
+      <workItem from="1467295569071" duration="2863000" />
     </task>
+    <task id="LOCAL-00001" summary="* added PasswordResetToken.">
+      <created>1467298353861</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1467298353861</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2774000" />
+    <option name="totallyTimeSpent" value="2903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="0" width="974" height="1047" extended-state="0" />
@@ -1062,6 +1066,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="* added PasswordResetToken." />
+    <option name="LAST_COMMIT_MESSAGE" value="* added PasswordResetToken." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1166,8 +1174,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/lss/web/controller/RegistrationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="96" column="55" selection-start-line="96" selection-start-column="55" selection-end-line="96" selection-end-column="55" />
+        <state relative-caret-position="582">
+          <caret line="98" column="43" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
           <folding />
         </state>
       </provider>
