@@ -8,9 +8,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m1-lesson3/.idea/deployment.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m1-lesson3/.idea/misc.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m1-lesson3/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssApp2.java" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssApp2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssSecurityConfig.java" />
     </list>
     <ignored path="learn-spring-security-m1-l2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -191,11 +190,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/commands.md" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssApp2.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -904,7 +903,7 @@
       <option name="presentableId" value="Default" />
       <updated>1467274815726</updated>
       <workItem from="1467274817103" duration="13000" />
-      <workItem from="1467274837019" duration="1144000" />
+      <workItem from="1467274837019" duration="1169000" />
     </task>
     <task id="LOCAL-00001" summary="* added password file">
       <created>1467275038345</created>
@@ -927,11 +926,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467275513012</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="* login works.">
+      <created>1467275995566</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1467275995566</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1157000" />
+    <option name="totallyTimeSpent" value="1182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="0" />
@@ -976,7 +982,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="* added password file" />
     <MESSAGE value="* added security config" />
-    <option name="LAST_COMMIT_MESSAGE" value="* added security config" />
+    <MESSAGE value="* login works." />
+    <option name="LAST_COMMIT_MESSAGE" value="* login works." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -995,14 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="53" column="66" selection-start-line="53" selection-start-column="66" selection-end-line="53" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1035,6 +1034,14 @@
             <element signature="e#520#521#0" expanded="true" />
             <element signature="e#543#544#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
