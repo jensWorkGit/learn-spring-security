@@ -9,8 +9,14 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableWebSecurity
 public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
 
+    public LssSecurityConfig() {
+        super();
+    }
+
+    //
+
     @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception { // @formatter:off 
+    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception { // @formatter:off
         auth.
             inMemoryAuthentication().
             withUser("user").password("pass").
@@ -19,12 +25,14 @@ public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception { // @formatter:off
-         http
-            .authorizeRequests()
-             .anyRequest().authenticated()
-             .antMatchers("delete/**").hasAnyAuthority("ADMIN", "ADMIN2") // ROLE_ADMIN
-             .and()
-        .formLogin().and()
-        .httpBasic();
+        http
+        .authorizeRequests()
+                .antMatchers("/delete/**").hasAnyAuthority("ADMIN", "ADMIN2")
+                .anyRequest().authenticated()
+
+        .and()
+        .formLogin()
+        ;
     } // @formatter:on
+
 }
