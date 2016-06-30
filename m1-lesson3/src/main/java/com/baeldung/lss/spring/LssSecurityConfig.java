@@ -29,10 +29,8 @@ public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
         .authorizeRequests()
                 .antMatchers("/delete/**").hasAnyAuthority("ADMIN", "ADMIN2")
                 .anyRequest().authenticated()
-
         .and()
-        .formLogin()
-        ;
+        .formLogin().and().httpBasic();
     } // @formatter:on
 
 }
