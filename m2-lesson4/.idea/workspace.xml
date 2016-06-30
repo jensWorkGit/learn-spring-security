@@ -6,7 +6,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m2-lesson3/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m2-lesson3/.idea/libraries/Maven__javax_mail_javax_mail_api_1_5_5.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m2-lesson3/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/resetPassword.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m2-lesson5/.idea/artifacts/learn_spring_security_m2_l5_war.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m2-lesson5/.idea/artifacts/learn_spring_security_m2_l5_war_exploded.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../m2-lesson5/.idea/compiler.xml" />
@@ -108,9 +107,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../m2-lesson3/pom.xml" afterPath="$PROJECT_DIR$/../m2-lesson3/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../m2-lesson3/src/main/java/com/baeldung/lss/registration/listener/RegistrationListener.java" afterPath="$PROJECT_DIR$/../m2-lesson3/src/main/java/com/baeldung/lss/registration/listener/RegistrationListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/service/IUserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/service/IUserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/web/controller/RegistrationController.java" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/web/controller/RegistrationController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../m2-lesson5/src/main/resources/templates/loginPage.html" afterPath="$PROJECT_DIR$/../m2-lesson5/src/main/resources/templates/loginPage.html" />
     </list>
     <ignored path="learn-spring-security-m2-l4.iws" />
@@ -1054,7 +1050,7 @@
       <option name="presentableId" value="Default" />
       <updated>1467295523392</updated>
       <workItem from="1467295524622" duration="40000" />
-      <workItem from="1467295569071" duration="3396000" />
+      <workItem from="1467295569071" duration="3589000" />
     </task>
     <task id="LOCAL-00001" summary="* added PasswordResetToken.">
       <created>1467298353861</created>
@@ -1070,25 +1066,33 @@
       <option name="project" value="LOCAL" />
       <updated>1467298472225</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="* added PasswordResetToken.">
+      <created>1467299005448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1467299005448</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3436000" />
+    <option name="totallyTimeSpent" value="3629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
