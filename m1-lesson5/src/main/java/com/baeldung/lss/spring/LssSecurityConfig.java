@@ -35,7 +35,10 @@ public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
         .formLogin().
             loginPage("/login").permitAll().
             loginProcessingUrl("/doLogin")
-        .and().logout().permitAll().logoutRequestMatcher(new AntPathRequestMatcher("/doLogout", "GET"))
+        .and()
+            .logout()
+            .permitAll()
+            .logoutRequestMatcher(new AntPathRequestMatcher("/doLogout", "GET"))
         .and()
         .csrf().disable()
         ;
