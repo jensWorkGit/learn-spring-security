@@ -3,6 +3,7 @@ package com.baeldung.lss.web.controller;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -31,12 +32,16 @@ public class UserController {
     }
 
     @RequestMapping("{id}")
-    public ModelAndView view(@PathVariable("id") User user) {
+    public ModelAndView view(
+            @PathVariable("id")
+                    User user) {
         return new ModelAndView("tl/view", "user", user);
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ModelAndView create(@Valid User user, BindingResult result, RedirectAttributes redirect) {
+    public ModelAndView create(
+            @Valid
+                    User user, BindingResult result, RedirectAttributes redirect) {
         if (result.hasErrors()) {
             return new ModelAndView("tl/form", "formErrors", result.getAllErrors());
         }
@@ -46,19 +51,24 @@ public class UserController {
     }
 
     @RequestMapping(value = "delete/{id}")
-    public ModelAndView delete(@PathVariable("id") Long id) {
+    public ModelAndView delete(
+            @PathVariable("id")
+                    Long id) {
         this.userRepository.delete(id);
         return new ModelAndView("redirect:/user/");
     }
 
     @RequestMapping(value = "modify/{id}", method = RequestMethod.GET)
-    public ModelAndView modifyForm(@PathVariable("id") User user) {
+    public ModelAndView modifyForm(
+            @PathVariable("id")
+                    User user) {
         return new ModelAndView("tl/form", "user", user);
     }
 
     // the form
 
     @RequestMapping(params = "form", method = RequestMethod.GET)
+    @PreAuthorize("principal.username=='user'")
     public String createForm(@ModelAttribute User user) {
         return "tl/form";
     }
