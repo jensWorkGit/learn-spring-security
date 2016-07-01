@@ -2,11 +2,13 @@ package com.baeldung.lss.spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 @EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
 
     public LssSecurityConfig() {
@@ -31,9 +33,15 @@ public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
             //.antMatchers("/secured").access("hasRole('USER')")
             //.antMatchers("/secured").access("hasAuthority('ROLE_ADMIN')")
             //.antMatchers("/secured").hasIpAddress("192.168.1.0/24")
-            .antMatchers("/secured").access("hasIpAddress('192.168.1.0/24')")
-            .anyRequest().authenticated()
-        
+            //.antMatchers("/secured").access("hasIpAddress('192.168.1.0/24')")
+            //.antMatchers("/secured").access("hasIpAddress('::1')")
+            //.antMatchers("/secured").anonymous()
+            //.antMatchers("/secured").access("isAnonymous()")
+            //.antMatchers("/secured").access("request.method == 'GET'")
+            //.anyRequest().authenticated()
+            .anyRequest().permitAll()
+
+
         .and()
         .formLogin().
             loginPage("/login").permitAll().
