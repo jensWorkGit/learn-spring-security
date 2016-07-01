@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/learn-spring-security.iml" filepath="$PROJECT_DIR$/.idea/learn-spring-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4-lesson1/learn-spring-security-m4-l1.iml" filepath="$PROJECT_DIR$/m4-lesson1/learn-spring-security-m4-l1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4-lesson2/learn-spring-security-m4-l2.iml" filepath="$PROJECT_DIR$/m4-lesson2/learn-spring-security-m4-l2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4-lesson3/learn-spring-security-m4-l3.iml" filepath="$PROJECT_DIR$/m4-lesson3/learn-spring-security-m4-l3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4-lesson4/learn-spring-security-m4-l4.iml" filepath="$PROJECT_DIR$/m4-lesson4/learn-spring-security-m4-l4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m4-lesson5/learn-spring-security-m4-l5.iml" filepath="$PROJECT_DIR$/m4-lesson5/learn-spring-security-m4-l5.iml" />
+    </modules>
+  </component>
+</project>
