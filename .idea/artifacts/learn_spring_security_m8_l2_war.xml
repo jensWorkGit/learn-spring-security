@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="learn-spring-security-m8-l2:war">
+    <output-path>$PROJECT_DIR$/m8-lesson2/target</output-path>
+    <root id="archive" name="learn-spring-security-m8-l2-0.1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="learn-spring-security-m8-l2:war exploded" />
+    </root>
+  </artifact>
+</component>
