@@ -53,26 +53,17 @@ public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {// @formatter:off
-        http
-        .authorizeRequests()
-                .antMatchers("/signup",
-                        "/user/register",
-                        "/registrationConfirm*",
-                        "/badUser*",
-                        "/js/**").permitAll()
-                .anyRequest().authenticated()
+        http.authorizeRequests()
+            .antMatchers("/signup", "/user/register", "/registrationConfirm*", "/badUser*", "/js/**").permitAll()
+            .anyRequest().authenticated()
 
-        .and()
-        .formLogin().
-            loginPage("/login").permitAll().
-            loginProcessingUrl("/doLogin")
+            .and().formLogin().
+                    loginPage("/login").permitAll().
+                    loginProcessingUrl("/doLogin")
 
-        .and()
-        .logout().permitAll().logoutUrl("/logout")
+            .and().logout().permitAll().logoutUrl("/logout")
 
-        .and()
-        .csrf().disable()
-        ;
+            .and().csrf().disable();
     } // @formatter:on
 
     @Bean
