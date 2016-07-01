@@ -29,7 +29,9 @@ public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
         http
         .authorizeRequests()
             //.antMatchers("/secured").access("hasRole('USER')")
-            .antMatchers("/secured").access("hasAuthority('ROLE_ADMIN')")
+            //.antMatchers("/secured").access("hasAuthority('ROLE_ADMIN')")
+            //.antMatchers("/secured").hasIpAddress("192.168.1.0/24")
+            .antMatchers("/secured").access("hasIpAddress('192.168.1.0/24')")
             .anyRequest().authenticated()
         
         .and()
