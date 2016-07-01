@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6f6182f-2ed3-4e0f-89fe-5300d136d72e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../commands.md" afterPath="$PROJECT_DIR$/../commands.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/learn_spring_security_m3_l3_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/learn_spring_security_m3_l3_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn-spring-security-m3-l3.iml" afterPath="$PROJECT_DIR$/learn-spring-security-m3-l3.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssSecurityConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/data.sql" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../m3-lesson4/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../m3-lesson4/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../m3-lesson4/.idea/misc.xml" afterPath="$PROJECT_DIR$/../m3-lesson4/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../m3-lesson4/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../m3-lesson4/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../m3-lesson4/learn-spring-security-m3-l4.iml" afterPath="$PROJECT_DIR$/../m3-lesson4/learn-spring-security-m3-l4.iml" />
     </list>
     <ignored path="learn-spring-security-m3-l3.iws" />
     <ignored path=".idea/workspace.xml" />
