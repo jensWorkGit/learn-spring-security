@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/learn-spring-security-m5.iml" filepath="$PROJECT_DIR$/learn-spring-security-m5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/m5-lesson1/learn-spring-security-m5-l1.iml" filepath="$PROJECT_DIR$/m5-lesson1/learn-spring-security-m5-l1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/m5-lesson4/learn-spring-security-m5-l4.iml" filepath="$PROJECT_DIR$/m5-lesson4/learn-spring-security-m5-l4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-spring-security-m6.iml" filepath="$PROJECT_DIR$/learn-spring-security-m6.iml" />
       <module fileurl="file://$PROJECT_DIR$/m6-lesson2/learn-spring-security-m6-l2.iml" filepath="$PROJECT_DIR$/m6-lesson2/learn-spring-security-m6-l2.iml" />
       <module fileurl="file://$PROJECT_DIR$/m6-lesson3/learn-spring-security-m6-l3.iml" filepath="$PROJECT_DIR$/m6-lesson3/learn-spring-security-m6-l3.iml" />
       <module fileurl="file://$PROJECT_DIR$/m6-lesson4/learn-spring-security-m6-l4.iml" filepath="$PROJECT_DIR$/m6-lesson4/learn-spring-security-m6-l4.iml" />

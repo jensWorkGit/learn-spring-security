@@ -22,8 +22,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="learn-spring-security-m5-l1" />
-        <module name="learn-spring-security-m5-l4" />
         <module name="learn-spring-security-m6-l2" />
         <module name="learn-spring-security-m6-l3" />
         <module name="learn-spring-security-m6-l4" />
@@ -32,10 +30,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="learn-spring-security-m5" target="1.5" />
-      <module name="learn-spring-security-m5-l1" target="1.8" />
-      <module name="learn-spring-security-m5-l4" target="1.8" />
-      <module name="learn-spring-security-m5-l5" target="1.8" />
+      <module name="learn-spring-security-m6" target="1.5" />
       <module name="learn-spring-security-m6-l2" target="1.8" />
       <module name="learn-spring-security-m6-l3" target="1.8" />
       <module name="learn-spring-security-m6-l4" target="1.8" />
