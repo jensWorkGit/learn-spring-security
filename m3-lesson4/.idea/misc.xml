@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="GradleLocalSettings">
-    <option name="modificationStamps">
-      <map>
-        <entry key="$PROJECT_DIR$/../../../cheatSheetMgr" value="2917987822129" />
-        <entry key="$PROJECT_DIR$/../../../gas-mgr-app-boot" value="2917901175981" />
-        <entry key="$PROJECT_DIR$/../../../js/jhipster/21-points" value="13130544729188" />
-        <entry key="$PROJECT_DIR$/../../../js/jhipster/gasmgrapp" value="2917854262343" />
-        <entry key="$PROJECT_DIR$/../../../js/jhipster/jhipster-demo" value="2917882703974" />
-        <entry key="$PROJECT_DIR$/../../../js/jhipster/test-gas-mgr-app-basic" value="2917905401305" />
-        <entry key="$PROJECT_DIR$/../../../js/jhipster/test-gas-mgr-app-oauth" value="2917902742745" />
-        <entry key="$PROJECT_DIR$/../../../js/jhipster/testJHipsterGateway" value="2917849860627" />
-        <entry key="$PROJECT_DIR$/../../../js/jhipster/testJHipsterMicroservice" value="2917852071280" />
-        <entry key="$PROJECT_DIR$/../../../js/jhipster/testJHipsterMonolith" value="2917850587123" />
-      </map>
-    </option>
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
     </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -36,7 +20,9 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="true" assert-keyword="true" jdk-15="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
   <component name="masterDetails">
     <states>
       <state key="ProjectJDKs.UI">
