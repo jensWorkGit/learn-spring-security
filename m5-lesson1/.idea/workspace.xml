@@ -4,7 +4,6 @@
     <list default="true" id="394dbaff-f85c-40f1-ad1d-a81308cdf3c6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssSecurityConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/web/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/lss/web/controller/UserController.java" />
     </list>
     <ignored path="learn-spring-security-m5-l1.iws" />
@@ -62,10 +61,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/lss/web/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="372">
-              <caret line="70" column="44" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
+              <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
               <folding>
-                <element signature="e#2478#2479#0" expanded="true" />
-                <element signature="e#2510#2511#0" expanded="true" />
+                <element signature="e#2519#2520#0" expanded="true" />
+                <element signature="e#2551#2552#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,8 +97,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/lss/web/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/lss/spring/LssSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/lss/web/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -808,7 +807,7 @@
       <option name="presentableId" value="Default" />
       <updated>1467365073532</updated>
       <workItem from="1467365074669" duration="1608000" />
-      <workItem from="1467371794786" duration="1327000" />
+      <workItem from="1467371794786" duration="1424000" />
     </task>
     <task id="LOCAL-00001" summary="* added user expression.">
       <created>1467365291642</created>
@@ -838,11 +837,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467372574022</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="* added security annotation.">
+      <created>1467373135356</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1467373135356</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2935000" />
+    <option name="totallyTimeSpent" value="3032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -889,7 +895,8 @@
     <MESSAGE value="* &quot;hasAuthority('ROLE_ADMIN')&quot;) added." />
     <MESSAGE value="* added expression syntax for ip." />
     <MESSAGE value="* allow all without authentication added." />
-    <option name="LAST_COMMIT_MESSAGE" value="* allow all without authentication added." />
+    <MESSAGE value="* added security annotation." />
+    <option name="LAST_COMMIT_MESSAGE" value="* added security annotation." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1011,10 +1018,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/lss/web/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
-          <caret line="70" column="44" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
+          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
           <folding>
-            <element signature="e#2478#2479#0" expanded="true" />
-            <element signature="e#2510#2511#0" expanded="true" />
+            <element signature="e#2519#2520#0" expanded="true" />
+            <element signature="e#2551#2552#0" expanded="true" />
           </folding>
         </state>
       </provider>
