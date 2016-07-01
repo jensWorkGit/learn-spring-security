@@ -28,7 +28,8 @@ public class LssSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception { // @formatter:off
         http
         .authorizeRequests()
-            .antMatchers("/secured").access("hasRole('USER')")
+            //.antMatchers("/secured").access("hasRole('USER')")
+            .antMatchers("/secured").access("hasAuthority('ROLE_ADMIN')")
             .anyRequest().authenticated()
         
         .and()
