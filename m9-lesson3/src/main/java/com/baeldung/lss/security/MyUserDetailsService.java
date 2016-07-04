@@ -1,8 +1,8 @@
 package com.baeldung.lss.security;
 
-import java.util.Collection;
-import java.util.stream.Collectors;
-
+import com.baeldung.lss.persistence.UserRepository;
+import com.baeldung.lss.web.model.Role;
+import com.baeldung.lss.web.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -11,9 +11,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.baeldung.lss.persistence.UserRepository;
-import com.baeldung.lss.web.model.Role;
-import com.baeldung.lss.web.model.User;
+import java.util.Collection;
+import java.util.stream.Collectors;
 
 @Service
 public class MyUserDetailsService implements UserDetailsService {
@@ -35,7 +34,8 @@ public class MyUserDetailsService implements UserDetailsService {
                 throw new UsernameNotFoundException("No user found with email: " + email);
             }
 
-            return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(), true, true, true, true, getAuthorities(user.getRoles()));
+            return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(), true,
+                    true, true, true, getAuthorities(user.getRoles()));
         } catch (final Exception e) {
             throw new RuntimeException(e);
         }
@@ -44,7 +44,8 @@ public class MyUserDetailsService implements UserDetailsService {
     // UTIL
 
     public final Collection<? extends GrantedAuthority> getAuthorities(final Collection<Role> roles) {
-        return roles.stream().flatMap(role -> role.getPrivileges().stream()).map(p -> new SimpleGrantedAuthority(p.getName())).collect(Collectors.toList());
+        return roles.stream().flatMap(role -> role.getPrivileges().stream())
+                    .map(p -> new SimpleGrantedAuthority(p.getName())).collect(Collectors.toList());
     }
 
 }
